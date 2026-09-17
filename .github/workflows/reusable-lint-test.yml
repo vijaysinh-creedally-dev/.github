@@ -7,7 +7,7 @@ jobs:
   lint-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Run lint (placeholder)
         run: echo "✅ Lint step ran — replace with your real linter"

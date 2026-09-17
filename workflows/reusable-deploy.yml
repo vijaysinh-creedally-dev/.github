@@ -1,0 +1,20 @@
+name: Reusable Deploy
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Deploy (placeholder)"
+        run: |
+          echo "🚀 Pretend-deploying branch '${{ inputs.environment }}' now."
+          echo "Replace this step with real SSH/rsync or your host's deploy method later."

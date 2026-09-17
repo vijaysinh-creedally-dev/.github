@@ -1,0 +1,16 @@
+name: Reusable Lint & Test
+
+on:
+  workflow_call:
+
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lint (placeholder)
+        run: echo "✅ Lint step ran — replace with your real linter"
+
+      - name: Run tests (placeholder)
+        run: echo "✅ Test step ran — replace with your real test command"
